@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "26459d4ea97010c062d4bbf58abef73a",
+    "content-hash": "2cdd21813ca38b6a81eb66e08c93d326",
     "packages": [
         {
             "name": "amphp/hpack",
@@ -1583,11 +1583,11 @@
         },
         {
             "name": "habib/datatables",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../Datatables_Ux_Bundle",
-                "reference": "9cf0371ea637128e3d170adb9857251196700c27"
+                "reference": "2faaa107f1cd04bdd839819dadd704c311f81a0b"
             },
             "require": {
                 "php": ">=8.1",
