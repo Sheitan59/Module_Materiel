@@ -16,6 +16,19 @@ class MaterielRepository extends ServiceEntityRepository
         parent::__construct($registry, Materiel::class);
     }
 
+    public function findMoreThanOne(): array
+    {
+
+        $query = $this
+            ->createQueryBuilder('m')
+            ->select('m');
+            $query = $query     
+                ->Where('m.quantite > 0');
+    
+
+        return $query->getQuery()->execute();
+    }
+
     //    /**
     //     * @return Materiel[] Returns an array of Materiel objects
     //     */

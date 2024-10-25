@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+
+{% block title %}Modifier un produit{% endblock %}
+{% block body %}
+
+	<div class="container-fluid">
+		<div class="row d-flex justify-content-evenly">
+			<div class="col-md-6 col-xl-10 mt-4">
+            {{ form_start(form, { attr: { 'data-controller': 'calcul' }}) }}
+                {{ form_row(form.nom) }}
+                {{ form_row(form.prixHt, { 'attr': { 'data-calcul-target': 'prixHt', 'data-action': 'input->calcul#updatettc' } }) }}
+                {{ form_row(form.tva, { 'attr': { 'data-calcul-target': 'tva', 'data-action': 'input->calcul#update' } }) }}
+                {{ form_row(form.prixTtc, { 'attr': { 'data-calcul-target': 'prixTtc', 'data-action': 'input->calcul#updateht'} }) }}
+                {{ form_row(form.quantite) }}
+                {{ form_row(form.dateDeCreation) }}
+
+                <div class="form-group mt-4">
+                    <button type="submit" class="btn btn-dark" data-bs-dismiss="modal" >Soumettre</button>
+                </div>
+            {{ form_end(form) }}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+

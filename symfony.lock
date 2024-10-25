@@ -26,6 +26,9 @@
             "./migrations/.gitignore"
         ]
     },
+    "habib/datatables": {
+        "version": "dev-main"
+    },
     "phpunit/phpunit": {
         "version": "9.6",
         "recipe": {

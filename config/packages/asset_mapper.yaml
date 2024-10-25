@@ -3,3 +3,9 @@ framework:
         # The paths to make available to the asset mapper.
         paths:
             - assets/
+            - vendor/habib/datatables
+        # Key-value pair of attributes to add to script tags output for the importmap.
+        # importmap_script_attributes:
+        # Example:
+            # data-turbo-track:    dynamic
+            # data-turbo-prefetch:    false 
